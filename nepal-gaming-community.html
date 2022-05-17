@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="nepal-gaming-community.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="444.png" src="444.png">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik+Beastly&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> Nepal Gaming community</title>
+</head>
+<body>
+<header class="header">
+
+  
+  <div class="navigation">
+    <div class="logo" style="transform: translate(0px,0px); opacity: 1; display: flex; padding-top: 5px;">
+      
+    <h1 style="font-family: 'Rubik'; font-size: 1.5rem; color: #fff; padding-left: 10px; padding-top: 15px;">NepalGaming<span>Community</span>
+    </h1>
+    <li class="container">
+      <a href="nepal-gaming-community.html">Home</a>
+      <a href="#Register Tournament"> Register Tournament</a>
+      <a href="#"> Merchandise</a>
+      <a href="#">About </a>
+      <a href="#"> Contact </a>
+    </li>
+  </div>
+  </div>
+<h2 style="   text-align: center;
+color:rgb(130 203 245) ;
+font-size: 70px;
+padding-top: 140px;">Nepal's Largest Gaming <br> Organization
+</h2>
+<p>Donate and Grow Nepal Gaming Community <br><button><a href="donate.html">Donate</a></button>
+</p>
+
+</header>
+<main>
+  <h3 style="    color: #0d0e0d;
+  font-family: 'Rubik';
+  font-size: 35px;
+ text-align: center; 
+ padding-top: 50px;
+ " class="intro">nepal gaming community
+   <p class="p-intro" style="    font-size: 16px;
+   text-align: center;
+   padding-left: 20px;
+   color: #221b1b;
+   font-family:'Arimo';">
+"Nepal Gaming Community is a nepal's largest gaming Organization." was opened by Asian Gaming and tech,in january 23,2022.<br>
+it was opened to promote nepali e-sport content creators,talented skilled players.
+  </p>
+
+</main>
+<footer>
+ <form onsubmit="sendEmail(); reset();  alert">
+   <h4 style="
+    color: #fff;
+    font-size: 30px;
+"> Any Inquiry?<br>Send us message,</h4>
+   <input type="text" id="name" placeholder="Full Name" required>
+   <input type="text" id="Phn" placeholder="Phone Number" required numbers>
+   <input type="text" id="email" placeholder="Email Address" required>
+   <textarea name="message" id="message"  rows="4" placeholder="Your Inquiry."></textarea>
+   <button type="submit" class="sumbit" style="border: none; color: #fff; background-color: aqua;">Send</button>
+ </form>
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    Host : "smtp.gmail.com",
+    Username : "rekhaniraula2041@gmail.com",
+    Password : "13D98DA279D4D34295B1D24D7716DDA806E5",
+    To : 'rekhaniraula2041@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+  }
+</script>
+</body>
+</html>
